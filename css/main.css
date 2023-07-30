@@ -147,18 +147,80 @@ i:hover{
 .about-us .right-us,.about-us .left-us{
     min-height: 500px;
 }
-.about-us .right-us{
+.about-us .right-us .right-us-cont{
     border: 5px solid #fff;
 }
-
 .about-us .left-us .content-us p{
     font-weight: bold;
     text-align: justify;
     line-height: 1.8;
 }
 
+/* tours */
 
 
+/* div for whats */
+
+.infocoll{
+    width: fit-content;
+    height: max-content;
+    position: fixed;
+    z-index: 1000;
+    bottom: 30px;
+    right: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--white-color);
+    border-radius: 10px;
+
+
+}
+.infocoll div{
+    position: relative;
+}
+.infocoll div i {
+    font-size: 48px;
+    margin: 10px auto;
+}
+.infocoll div span{
+    display: inline-block;
+    width: max-content;
+    padding: 10px;
+    background: var(--body-color);
+    border-radius: 5px;
+    color: #00f;
+    visibility: none;
+    opacity: 0;
+    position: absolute;
+    right:50px ;
+}
+.infocoll div:hover span{
+    visibility: visible;
+    opacity: 1;
+}
+
+.infocoll div:nth-child(3) i {
+    color: var(--blue-color) !important;
+}
+.infocoll div:nth-child(3) i ,.infocoll div:nth-child(4) i {
+    animation: anim 1s linear  infinite  alternate;
+}
+
+@keyframes anim {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+    
+}
+
+/* footer */
+
+.footer{
+    min-height: 500px;
+}
 
 
 
