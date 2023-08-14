@@ -15,7 +15,7 @@
 body{
     background: var(--body-color);
     color: #7b6d5e;
-    min-height: 3000px;
+    /* min-height: 3000px; */
 }
 .d-center{
     display: flex;
@@ -184,7 +184,17 @@ i:hover{
 .infoitaly .content-info div{
 
 }
+.infoitaly .linksto{
 
+}
+.infoitaly .linksto button{
+    border: 1px solid #00f;
+    color: #00f;
+}
+.activebtn{
+    background-color: #00f;
+    color: #fff !important;
+}
 
 
 
