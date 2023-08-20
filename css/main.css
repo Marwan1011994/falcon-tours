@@ -196,11 +196,18 @@ i:hover{
     color: #fff !important;
 }
 
-
-
-
-
-
+/* div for backhome button */
+.backhome{
+    position: fixed;
+    bottom: 30px;
+    left: 25px;
+    width: max-content;
+    height: max-content;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color:#00f;
+}
 
 
 
@@ -251,9 +258,6 @@ i:hover{
     opacity: 1;
 }
 
-.infocoll div:nth-child(3) i {
-    color: var(--blue-color) !important;
-}
 .infocoll div:nth-child(3) i ,.infocoll div:nth-child(4) i {
     animation: anim 1s linear  infinite  alternate;
 }
