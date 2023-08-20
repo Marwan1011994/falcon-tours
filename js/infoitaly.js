@@ -1,20 +1,20 @@
-let idArt = localStorage.getItem("id")
+let idArt = localStorage.getItem("idIT")
 console.log(idArt+1)
 
 let readArt = document.querySelector(".first-section .read-art")
 let imgArt = document.querySelector(".first-section .imgArt")
 
-for(let i=0;i<contentTour.length;i++){
-    if(contentTour[i].id === idArt){
+for(let i=0;i<infoIt.length;i++){
+    if(infoIt[i].id === idArt){
         imgArt.innerHTML=`
-        <img src="${contentTour[i].img}" alt="" class="w-100" style="height:500px;">
+        <img src="${infoIt[i].img}" alt="" class="w-100" style="height:500px;">
         `;
 
         readArt.innerHTML = `
-        <h2>${contentTour[i].title}</h2>
-        <p class="mt-4">${contentTour[i].content1}</p>
-        <p class="mt-4">${contentTour[i].content2}</p>
-        <p class="mt-4">${contentTour[i].content3}</p>
+        <h2>${infoIt[i].title}</h2>
+        <p class="mt-4">${infoIt[i].content1}</p>
+        <p class="mt-4">${infoIt[i].content2}</p>
+        <p class="mt-4">${infoIt[i].content3}</p>
         <div class="d-center w-100 my-4">
             <div id="demo3" class="carousel slide w-75" data-bs-ride="carousel">
               <!-- Indicators/dots -->
@@ -30,22 +30,22 @@ for(let i=0;i<contentTour.length;i++){
               <!-- The slideshow/carousel -->
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="${contentTour[i].img1} "alt="صور للجوله" class="d-block" style="width:100%;height: 250px;">
+                  <img src="${infoIt[i].img1} "alt="صور للجوله" class="d-block" style="width:100%;height: 250px;">
                 </div>
                 <div class="carousel-item">
-                  <img src="${contentTour[i].img2}" alt="صور للجوله" class="d-block" style="width:100%;height: 250px;">
+                  <img src="${infoIt[i].img2}" alt="صور للجوله" class="d-block" style="width:100%;height: 250px;">
                 </div>
                 <div class="carousel-item">
-                  <img src="${contentTour[i].img3}" alt="صور للجوله" class="d-block" style="width:100%;height: 250px;"> 
+                  <img src="${infoIt[i].img3}" alt="صور للجوله" class="d-block" style="width:100%;height: 250px;"> 
                 </div>
                 <div class="carousel-item">
-                  <img src="${contentTour[i].img4}" alt="صور للجوله" class="d-block" style="width:100%;height: 250px;"> 
+                  <img src="${infoIt[i].img4}" alt="صور للجوله" class="d-block" style="width:100%;height: 250px;"> 
                 </div>
                 <div class="carousel-item">
-                  <img src="${contentTour[i].img5}" alt="صور للجوله" class="d-block" style="width:100%;height: 250px;"> 
+                  <img src="${infoIt[i].img5}" alt="صور للجوله" class="d-block" style="width:100%;height: 250px;"> 
                 </div>
                 <div class="carousel-item">
-                  <img src="${contentTour[i].img6}" alt="صور للجوله" class="d-block" style="width:100%;height: 250px;"> 
+                  <img src="${infoIt[i].img6}" alt="صور للجوله" class="d-block" style="width:100%;height: 250px;"> 
                 </div>
               </div>
               <!-- Left and right controls/icons -->
@@ -57,9 +57,9 @@ for(let i=0;i<contentTour.length;i++){
               </button>
             </div>
         </div>
-        <h4 class="text-center">${contentTour[i].titlepic}</h4>
-        <p class="mt-4">${contentTour[i].content4}</p>
-        <p class="mt-4 keywords">${contentTour[i].content5}</p>
+        <h4 class="text-center">${infoIt[i].titlepic}</h4>
+        <p class="mt-4">${infoIt[i].content4}</p>
+        <p class="mt-4 keywords">${infoIt[i].content5}</p>
         `;
     }
 }

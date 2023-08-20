@@ -61,10 +61,10 @@ for(let i = 0; i<contentTour.length;i++){
 }
 
 let idTour = document.querySelectorAll(".idtour")
-
 for(let j=6;j<contentTour.length;j++){
     idTour[j].setAttribute("hidden","")
 }
+localStorage.setItem("id","T1")
 let readMore = document.querySelectorAll(".idtour .card .readMore")
 readMore.forEach(function(ele){
     ele.onclick =function(){
@@ -210,3 +210,12 @@ if(storge === "3"){
     })
 }
 
+localStorage.setItem("idIT","IT1")
+let readMoreIT = document.querySelectorAll(".contArt .card .readMore")
+readMoreIT.forEach(function(ele){
+    ele.onclick =function(){
+        localStorage.setItem("idIT",ele.id);
+        window.open("infoitaly.html","_self")
+        
+    } 
+})
