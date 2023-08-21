@@ -215,7 +215,7 @@ let readMoreIT = document.querySelectorAll(".contArt .card .readMore")
 readMoreIT.forEach(function(ele){
     ele.onclick =function(){
         localStorage.setItem("idIT",ele.id);
-        window.open("infoarticles.html","_self")
+        window.open("infoItaly.html","_self")
         
     } 
 })
